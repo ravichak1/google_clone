@@ -1,0 +1,379 @@
+html{
+    height: 100%;
+    width: 100%;
+  }
+  
+  #navbar{
+    display: grid;
+    grid-template-columns: 20px 20px 1fr 120px 80px 100px 70px 30px;
+    grid-template-rows: 50px;
+    grid-template-areas: "small_device_menu small_device_all . Advanced_search Images dropdown Sign_in .";
+  
+  
+    a{
+        text-decoration: none;
+        color: #5f6368;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 15px;
+    }
+    #small_device_menu{
+      grid-area: small_device_menu;
+      justify-self: center;
+      align-self: center;
+      display: none;
+    }
+    #small_device_all{
+      grid-area: small_device_all;
+      justify-self: center;
+      align-self: center;
+      display: none;
+    }
+    #Advanced_search{
+        grid-area: Advanced_search;
+        justify-self: center;
+        align-self: center;
+    }
+    #Images{
+        grid-area: Images;
+        justify-self: center;
+        align-self: center;
+    }
+    #Advanced_search:hover{
+      grid-area: Advanced_search;
+      justify-self: center;
+      align-self: center;
+      color: black;
+      transform: scale(1.1);
+  }
+  #Images:hover{
+      grid-area: Images;
+      justify-self: center;
+      align-self: center;
+      color: black;
+      transform: scale(1.1);
+  }
+  
+    #dropdown{
+      grid-area: dropdown;
+      overflow: hidden;
+      justify-self: center;
+        align-self: center;
+      #Menu{
+        grid-area: Menu;
+        justify-self: center;
+        align-self: center;
+        border: none;
+        outline: none;
+        padding: 15px;
+        border-radius: 10%;
+        color: #9e9e9e;
+        background-color:white;
+        transition: all 0s ease-in-out;
+      }
+      #Menu:hover{
+        grid-area: Menu;
+        justify-self: center;
+        align-self: center;
+        border: none;
+        outline: none;
+        padding: 15px;
+        border-radius: 80%;
+        transform: scale(1.1);
+        color: white;
+        background-color: #dadce0
+      }
+    
+      .dropbtn{
+        font-size: 16px;
+        border: none;
+        outline: none;
+        color: white;
+        padding: 14px 16px;
+        background-color: inherit;
+        font: inherit;
+        margin: 0;
+      }
+    
+      .dropdown-content{
+        display: none;
+        position: absolute;
+        background-color: white;
+        width: 250px;
+        right: 60px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+        border-radius: 10px;
+    
+        .row{
+          .column{
+            float: right;
+            width: 60px;
+            padding: 10px;
+            background-color: white;
+            height: 280px;
+    
+            a{
+              float: none;
+              color: black;
+              padding: 16px;
+              text-decoration: none;
+              display: block;
+              text-align: left;
+            }
+    
+            a:hover{
+              background-color:white;
+              transform: scale(1.1);
+            }
+          }
+        }
+        .row:after{
+          content: "";
+          display: table;
+          clear: both;
+        }
+      }
+    }
+    
+    #dropdown:hover{
+      .dropdown-content{
+        display: block;
+      }
+    }
+   
+  
+    
+  
+    #Sign_in{
+        grid-area: Sign_in;
+        justify-self: center;
+        align-self: center;
+        background-color: #4285f4;
+        color: white;
+        padding: 10px;
+        border-radius: 5px;
+        background-color: none;
+        outline: none;
+    }
+    #Sign_in:hover{
+        grid-area: Sign_in;
+        justify-self: center;
+        align-self: center;
+        background-color: #4285f4;
+        color: white;
+        padding: 10px;
+        border-radius: 5px;
+        background-color: none;
+        outline: none;
+        transform: scale(1.1);
+    }
+  }
+  
+  
+    
+  #main{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 300px 140px 70px 200px;
+    grid-template-areas: ". logo ." ". search ."  ". offered .";
+    
+  
+    #logo{
+        grid-area: logo;
+        align-self: end;
+        justify-self: center;
+    }
+      #search{
+        grid-area: search;
+        align-self: center;
+        margin: 0;
+        
+        
+  
+        #flex-box{
+            display: flex;
+            grid-area: flex-box;
+            align-self: center;
+            justify-self: center;
+    
+            #google_search{
+                grid-area: google_search;
+            }
+            #feeling_lucky{
+                grid-area: feeling_lucky;
+            }
+        }
+    }
+  
+    
+    
+    #offered{
+        grid-area: offered;
+        align-self: start;
+        justify-self: center;
+        text-decoration: none;
+    }
+  }
+  
+  #search{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 50px 70px;
+    grid-template-areas: "text-search" "flex-box";
+    margin: 0;
+  
+    #text-search{
+        grid-area: text-search;
+    }
+  
+    #flex-box{
+        display: flex;
+        grid-area: flex-box;
+        align-self: center;
+        justify-self: center;
+        
+        
+  
+        #google_search{
+            grid-area: google_search;
+            border-radius: 50px;
+            border: none;
+            padding: 10px;
+            margin: 10px;
+            width: 150px;
+            outline: none;
+        }
+        #feeling_lucky{
+            grid-area: feeling_lucky;
+            border-radius: 50px;
+            border: none;
+            margin: 10px;
+            width: 150px;
+            outline: none;
+        }
+        #google_search:hover{
+            grid-area: google_search;
+            border-radius: 50px;
+            border: none;
+            padding: 10px;
+            margin: 10px;
+            width: 150px;
+            outline: none;
+            transform: scale(1.1);
+        }
+        #feeling_lucky:hover{
+            grid-area: feeling_lucky;
+            border-radius: 50px;
+            border: none;
+            margin: 10px;
+            width: 150px;
+            outline: none;
+            transform: scale(1.1);
+        }
+    }
+    
+    
+  }
+  
+  #search_box{
+    display: grid;
+    grid-template-columns: 30px 1fr 30px;
+    grid-row: 60px;
+    border: 1px solid #dadce0;
+    border-radius: 20px;
+    
+    #icon_search{
+        justify-self: center;
+        align-self: center;
+    }
+    #text_search{
+        justify-self: center;
+        align-self: center;
+        width: 100%;
+        border: none;
+        outline: none;
+        height: 40px;
+        padding: 0;
+        font-size: 25px;
+    }
+    #icon_mic{
+    justify-self: center;
+    align-self: center;        
+    }
+  }
+  #search_box:hover{
+    display: grid;
+    grid-template-columns: 30px 1fr 30px;
+    grid-row: 60px;
+    border: 1px solid #dadce0;
+    border-radius: 20px;
+    transform: scale(1.1);
+  }
+  #footer{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #f2f2f2;
+    display: grid;
+    grid-template-columns: 100px 100px 100px 150px 1fr 150px 100px 100px 100px;
+    grid-template-rows: 50px 50px;
+    
+    grid-template-areas: "france . . . . . . . ." "about advertising business search_works . consumer_information privacy terms settings";
+  
+    a{
+        text-decoration: none;
+        color: #5f6368;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 15px;
+    }
+    #france{
+        grid-area: france;
+        color: #5f6368;
+        font-family: Arial, Helvetica, sans-serif;
+        justify-self: center;
+        align-self: center;
+    }
+    #about{
+        grid-area: about;
+        justify-self: center;
+        align-self: center;
+    }
+    #advertising{
+        grid-area: advertising;
+        justify-self: center;
+        align-self: center;
+    }
+    #business{
+        grid-area: business;
+        justify-self: center;
+        align-self: center;
+    }
+    #search_works{
+        grid-area: search_works;
+        justify-self: center;
+        align-self: center;
+    }
+    #consumer_information{
+        grid-area: consumer_information;
+        justify-self: center;
+        align-self: center;
+    }
+    #privacy{
+        grid-area: privacy;
+        justify-self: center;
+        align-self: center;
+    }
+    #terms{
+        grid-area: terms;
+        justify-self: center;
+        align-self: center;
+    }
+    #settings{
+        grid-area: settings;
+    justify-self: center;
+    align-self: center;        
+    }
+  }
+  
+  
+  
