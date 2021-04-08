@@ -1,0 +1,255 @@
+html{
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+body{
+    padding: 0;
+    margin: 0;
+}
+#nav_bar{
+    display: grid;
+    grid-template-columns: 150px 1fr 80px;
+    grid-template-rows: 55px;
+    grid-template-areas: 'logo . menu';
+    background-color: #f1f1f1;
+    padding: 0;
+    margin: 0;
+
+    a{
+        text-decoration: none;
+    }
+
+    #logo{
+        grid-area: logo;
+        padding: 10px 15px 0px 15px;
+        margin: 0;
+
+        #google_logo{
+            height: 40px;
+            width: 110px;
+            
+        }
+    }
+    #menu{
+        grid-area: menu;
+        justify-self: center;
+        align-self: center;
+
+        .button{
+            border: none;
+            color: #6d6d6d;
+            outline: none;
+            cursor: pointer;
+        }
+    }
+}
+
+#section{
+    display: grid;
+    grid-template-columns: 250px 1fr;
+    grid-template-rows: 70px;
+    grid-template-areas: 'para .';
+    border-bottom: 1px solid #f1f1f1;
+    font-family: Arial, Helvetica, sans-serif;
+
+    p{
+        grid-area: para;
+        align-self: center;
+        justify-self: center;
+        font-weight: 500;
+        font-size: 20px;
+        color: #dd3025;
+    }
+}
+
+#main{
+    #side_heading{
+        display: grid;
+        grid-template-columns: 1.1fr 1fr 0.9fr;
+        grid-template-rows: 90px;
+
+        #find_pages{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 15px;
+            align-self: end;
+            padding-left: 45px;
+        }
+        #todo_this{
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-weight: 1000;
+            align-self: end;
+        }
+    }
+    
+
+    #form1{
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 15px;
+        display: grid;
+        grid-template-columns: 0.08fr 0.3fr 0.7fr 1fr 0.9fr;
+        grid-template-rows: 45px 45px 45px 45px 50px;
+        grid-template-areas: '. all_these_words_label all_these_words all_these_words_to_do . '
+        '. this_exact_word_or_phrase_label this_exact_word_or_phrase this_exact_word_or_phrase_to_do . '
+        '. any_of_these_words_label any_of_these_words any_of_these_words_to_do . '
+        '. none_of_these_words_label none_of_these_words none_of_these_words_to_do . '
+        '. numbers_ranging_from_label sub_label numbers_ranging_from_to_do . '
+        ;
+
+        #all_these_words_label{
+            grid-area: all_these_words_label;
+            justify-self: start;
+            align-self: center;
+            font-size: 12px;
+        }
+        #all_these_words{
+            grid-area: all_these_words;
+            justify-self: center;
+            align-self: center;
+            width: 400px;
+            outline: none;
+            height: 25px;
+        }
+        #all_these_words_to_do{
+            grid-area: all_these_words_to_do;
+            font-size: 12px;
+        }
+        #this_exact_word_or_phrase_label{
+            grid-area: this_exact_word_or_phrase_label;
+            justify-self: start;
+            align-self: center;
+            font-size: 12px;
+        }
+        #this_exact_word_or_phrase{
+            grid-area: this_exact_word_or_phrase;
+            justify-self: center;
+            align-self: center;
+            width: 400px;
+            height: 25px;
+            outline: none;
+        }
+        #this_exact_word_or_phrase_to_do{
+            grid-area: this_exact_word_or_phrase_to_do;
+            font-size: 12px;
+        }
+        #any_of_these_words_label{
+            grid-area: any_of_these_words_label;
+            justify-self: start;
+            align-self: center;
+            font-size: 12px;
+        }
+        #any_of_these_words{
+            grid-area: any_of_these_words;
+            justify-self: center;
+            align-self: center;
+            width: 400px;
+            height: 25px;
+            outline: none;
+        }
+        #any_of_these_words_to_do{
+            grid-area: any_of_these_words_to_do;
+            font-size: 12px;
+        }
+        #none_of_these_words_label{
+            grid-area: none_of_these_words_label;
+            justify-self: start;
+            align-self: center;
+            font-size: 12px;
+        }
+        #none_of_these_words{
+            grid-area: none_of_these_words;
+            justify-self: center;
+            align-self: center;
+            width: 400px;
+            height: 25px;
+            outline: none;
+        }
+        #none_of_these_words_to_do{
+            grid-area: none_of_these_words_to_do;
+            font-size: 12px;
+        }
+        #numbers_ranging_from_label{
+            grid-area: numbers_ranging_from_label;
+            justify-self: start;
+            align-self: center;
+            font-size: 12px;
+        }
+        #sub_label{
+            grid-area: sub_label;
+            justify-self: center;
+            align-self: center;
+            width: 400px;
+            height: 40px;
+            outline: none;
+            display: grid;
+            grid-template-columns: 185px 30px 185px;
+            grid-template-rows: 40px;
+            grid-template-areas: 'numbers_ranging-from_1 to numbers_ranging_from_2';
+            #numbers_ranging-from_1{
+                grid-area: numbers_ranging-from_1;
+                justify-self: center;
+                align-self: center;
+                width: 185px;
+                height: 25px;
+                outline: none;
+            }
+            #to{
+                grid-area: to;
+                justify-self: center;
+                align-self: center;
+            }
+            #numbers_ranging_from_2{
+                grid-area: numbers_ranging_from_2;
+                justify-self: center;
+                align-self: center;
+                width: 185px;
+                height: 25px;
+                outline: none;
+            }
+        }
+        #numbers_ranging_from_to_do{
+            grid-area: numbers_ranging_from_to_do;
+            font-size: 12px;
+        }
+    }
+}
+#border-bottom{
+    display: grid;
+    grid-template-columns: 0.08fr 2.02fr 0.9fr;
+    grid-template-rows: 20px;
+    grid-template-areas: '. border-line .';
+    
+    #border-line{
+        grid-area: border-line;
+        border-bottom: 1.5px solid #d9d9d9;
+    }
+    
+}
+
+#heading2{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 50px;
+    grid-template-areas: 'heading_2 .';
+
+    p{
+        grid-area: heading_2;
+        padding-left: 45px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 15px;
+        font-weight: 500;
+    }
+}
+
+span{
+    font-family: 'IBM Plex Mono', monospace;
+    font-weight: 500;
+    font-size: 11px;
+}
+input[type=text]:focus{
+    border: 1.5px solid rgb(87, 87, 253);
+}
+input[type=text]{
+    border: 1.5px solid #d9d9d9;
+}
