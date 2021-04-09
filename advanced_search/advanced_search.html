@@ -27,29 +27,29 @@
             <p id="todo_this">To do this in the search box</p>
         </div>
         
-        <form action="https://www.google.com/advanced_search" id="form_main">
+        <form action="https://www.google.com/search" id="form_main" >
             <div id="form1">
                 <label for="all_these_words" id="all_these_words_label">all these words:</label>
-                <input type="text" id="all_these_words">
+                <input type="text" id="all_these_words" name="as_q">
                 <p id="all_these_words_to_do">Type the important words: <span>tri-colour rat terrier</span></p>
 
                 <label for="this_exact_word_or_phrase" id="this_exact_word_or_phrase_label">this exact word or phrase:</label>
-                <input type="text" id="this_exact_word_or_phrase">
+                <input type="text" id="this_exact_word_or_phrase" name="as_epq">
                 <p id="this_exact_word_or_phrase_to_do">Put exact words in quotes: <span>"rat terrier"</span></p>
 
                 <label for="any_of_these_words" id="any_of_these_words_label">any of these words:</label>
-                <input type="text" id="any_of_these_words">
+                <input type="text" id="any_of_these_words" name="as_oq">
                 <p id="any_of_these_words_to_do">Type OR between all the words you want: <span>miniature OR standard</span></p>
 
                 <label for="none_of_these_words" id="none_of_these_words_label">none of these words:</label>
-                <input type="text" id="none_of_these_words">
+                <input type="text" id="none_of_these_words" name="as_eq">
                 <p id="none_of_these_words_to_do">Put a minus sign just before words that you dont want: <span>-rodent, -"Jack Russell"</span></p>
 
                 <label for="numbers_ranging_from" id="numbers_ranging_from_label">numbers ranging from:</label>
                 <div id="sub_label">
-                    <input type="text" id="numbers_ranging-from_1">
+                    <input type="text" id="numbers_ranging-from_1" name="as_nlo">
                     <p id="to">to</p>
-                    <input type="text" id="numbers_ranging_from_2">
+                    <input type="text" id="numbers_ranging_from_2" name="as_nli">
                 </div>
                 <p id="numbers_ranging_from_to_do">Put two full stops between the numbers and add a unit of measurement: <span>10..35 kg, £300..£500, 2010..2011</span></p>
             </div>
@@ -61,7 +61,7 @@
             </div>
             <div id="form2">
                 <label for="language" id="language">language: </label>
-                <select data-placeholder="Choose a Language..." id="any_language">
+                <select data-placeholder="Choose a Language..." id="any_language" name="as_l" >
                     <option value="any language">any language</option>
                     <option value="AF">Afrikaans</option>
                     <option value="SQ">Albanian</option>
@@ -135,11 +135,11 @@
                     <option value="VI">Vietnamese</option>
                     <option value="CY">Welsh</option>
                     <option value="XH">Xhosa</option>
-                  </select>
-                  <p id="language_to_do">Find pages in the language that you select.</p>
+                </select>
+                <p id="language_to_do">Find pages in the language that you select.</p>
 
-                  <label for="region" id="region">region: </label>
-                  <select data-placeholder="region" id="any_region">
+                <label for="region" id="region">region: </label>
+                <select data-placeholder="region" id="any_region" name="as_r">
                     <option value="any region">any region</option>
                     <option value="Afrikaans">Afrikaans</option>
                     <option value="Albanian">Albanian</option>
@@ -213,42 +213,42 @@
                     <option value="Vietnamese">Vietnamese</option>
                     <option value="Welsh">Welsh</option>
                     <option value="Xhosa">Xhosa</option>
-                  </select>
-                  <p id="region_to_do">Find pages published in a particular region.</p>
+                </select>
+                <p id="region_to_do">Find pages published in a particular region.</p>
 
-                  <label for="last_update" id="last_update">last update: </label>
-                  <select data-placeholder="any_time" id="any_time">
+                <label for="last_update" id="last_update">last update: </label>
+                <select data-placeholder="any_time" id="any_time" name="as_lu">
                       <option value="anytime">anytime</option>
                       <option value="past_24hrs">past 24hrs</option>
                       <option value="past_week">past week</option>
                       <option value="past_month">past month</option>
                       <option value="past_year">past year</option>
-                  </select>
-                  <p id="last_update_to_do">Find pages updated within the time that you specify.</p>
+                </select>
+                <p id="last_update_to_do">Find pages updated within the time that you specify.</p>
 
-                  <label for="site_or_domain" id="site_or_domain">site or domain</label>
-                  <input type="text" id="site_or_domain_input">
-                  <p id="site_or_domain_to_do">Search one site (like<span>wikipedia.org</span>) or limit your results to a domain like <span>.edu, .org or .gov</span></p>
+                <label for="site_or_domain" id="site_or_domain">site or domain</label>
+                <input type="text" id="site_or_domain_input" name="as_sod">
+                <p id="site_or_domain_to_do">Search one site (like<span>wikipedia.org</span>) or limit your results to a domain like <span>.edu, .org or .gov</span></p>
 
-                  <label for="terms_appearing" id="terms_appearing">terms appearing: </label>
-                  <select data-placeholder="anywhere_in_the_page" id="anywhere_in_the_page">
+                <label for="terms_appearing" id="terms_appearing">terms appearing: </label>
+                <select data-placeholder="anywhere_in_the_page" id="anywhere_in_the_page" name="as_ta">
                       <option value="anywhere_in_the_page">any where in the page</option>
                       <option value="in_th_title_of_the_page">in th title of the page</option>
                       <option value="in_th_text_of_the_page">in th text of the page</option>
                       <option value="in_th_URL_of_the_page">in th URL of the page</option>
                       <option value="in_th_links_of_the_page">in th links of the page</option>
-                  </select>
-                  <p id="terms_appearing_to_do">Search for terms in the whole page, page title or web address, or links to the page you're looking for.</p>
+                </select>
+                <p id="terms_appearing_to_do">Search for terms in the whole page, page title or web address, or links to the page you're looking for.</p>
 
-                  <label for="safe_search" id="safe_search">SafeSearch</label>
-                  <select data-placeholder="Show explicit results" id="show_explicit_results">
+                <label for="safe_search" id="safe_search">SafeSearch</label>
+                <select data-placeholder="Show explicit results" id="show_explicit_results" name="as_ss">
                       <option value="Show_explicit_results">Show explicit results</option>
                       <option value="Hide_explicit_results">Hide explicit results</option>
-                  </select>
-                  <p id="safe_search_to_do">Tell <h6>SafeSearch</h6> whether to filter sexually explicit content.</p>
+                </select>
+                <p id="safe_search_to_do">Tell <a href="https://support.google.com/websearch/answer/510?p=adv_safesearch&hl=en&visit_id=637535812366042595-1341587050&rd=1">SafeSearch</a> whether to filter sexually explicit content.</p>
 
-                  <label for="file_type" id="file_type">file type: </label>
-                  <select data-placeholder="any format" id="any_format">
+                <label for="file_type" id="file_type">file type: </label>
+                <select data-placeholder="any format" id="any_format" name="as_ft">
                       <option value="any_format">any format</option>
                       <option value="adobe_acrobat">Adobe Acrobat PDF (.pdf)</option>
                       <option value="adobe_postscript">Adobe Postscript (.ps)</option>
@@ -260,44 +260,52 @@
                       <option value="microsoft_word">Microsoft Word (.doc)</option>
                       <option value="rich_text_format">Rich Text Format (.rtf)</option>
                       <option value="shockwave_flash">Shockwave Flash (.swf)</option>
-                  </select>
-                  <p id="file_type_to_do">Find pages in the format that you prefer.</p>
+                </select>
+                <p id="file_type_to_do">Find pages in the format that you prefer.</p>
 
-                  <label for="usage_rights" id="usage_rights">usage rights</label>
-                  <select data-placeholder="not_filtered_by_licence" id="not_filter_by_licence">
+                <label for="usage_rights" id="usage_rights">usage rights</label>
+                <select data-placeholder="not_filtered_by_licence" id="not_filter_by_licence" name="as_ur">
                       <option value="not_filtered_by_licence">not filtered by licence</option>
                       <option value="free_to_use_or_share">free to use or share</option>
                       <option value="free_to_use_or_share_even_commercially">free to use or share,even commercially</option>
                       <option value="free_to_use_share_or_modify">free to use share or modify</option>
                       <option value="free_to_use_share_or_modify_even_commercially">free to use, share or modify, even commercially</option>
-                  </select>
-                  <p id="usage_rights_to_do">Find pages that you are free to use yourself.</p>
-
-                  <input type="button" value="Advanced Search">
+                </select>
+                <p id="usage_rights_to_do">Find pages that you are free to use yourself.</p>
             </div>
-            <div id="border_bottom_2">
-                <div id="border_line_1"></div>
+            <div id="submit_advanced_search">
+                <div id="submit_advanced_search_sub">
+                    <button type="submit" value="Advanced Search">Advanced Search</button>
+                </div>
             </div>
-            <div id="heading3">
-                <p id="heading_3_para">
-                    You can also...
-                </p>
-            </div>
-            <div id="heading_3_links">
-                <a href="#">Find pages that are similar to a URL</a>
-                <a href="#">Search pages that you've visited</a>
-                <a href="#">Use operators in the search box</a>
-                <a href="#">Customise your search settings</a>
-            </div>
-            <div id="footer">
-                <p id="france">France</p>
-                
-                <a href="#" id="help">Help</a>
-                <a href="#" id="consumer_information">Consumer Information</a>
-                <a href="#" id="privacy">Privacy</a>
-                <a href="#" id="terms">Terms</a>
-            </div>
+            
         </form>
+        <div id="border_bottom_2">
+            <div id="border_line_1"></div>
+        </div>
+        <div id="heading3">
+            <p id="heading_3_para">
+                You can also...
+            </p>
+        </div>
+        <div id="heading_3_links">
+            <a href="https://support.google.com/websearch/answer/2466433?visit_id=637535859746129915-1177300998&p=adv_pages_similar&hl=en&rd=1">Find pages that are similar to a URL</a><br>
+            <a href="https://support.google.com/websearch/answer/54068?p=adv_pages_visited&hl=en&visit_id=637535859746129915-1177300998&rd=1">Search pages that you've visited</a><br>
+            <a href="https://support.google.com/websearch/answer/2466433?visit_id=637535859746129915-1177300998&p=adv_operators&hl=en&rd=1">Use operators in the search box</a><br>
+            <a href="https://www.google.com/preferences?hl=en-FR">Customise your search settings</a><br>
+        </div>
+        <div id="footer">
+            <div id="footer_1">
+                <p id="france">France</p>
+            </div>
+            <div id="footer_2">  
+                <a href="https://support.google.com/websearch/?visit_id=637535859746129915-1177300998&hl=en-FR&rd=2#topic=3378866" id="help">Help</a>
+                <a href="https://support.google.com/websearch/answer/7585859?p=fr_consumer_info&hl=en-FR&fg=1&visit_id=637535859746129915-1177300998&rd=1" id="consumer_information">Consumer Information</a>
+                <a href="https://policies.google.com/privacy?hl=en-FR&fg=1" id="privacy">Privacy</a>
+                <a href="https://policies.google.com/terms?hl=en-FR&fg=1" id="terms">Terms</a>
+            </div>
+        </div>
+        
     </div>
 </body>
 </html>

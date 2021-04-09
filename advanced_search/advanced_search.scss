@@ -253,3 +253,337 @@ input[type=text]:focus{
 input[type=text]{
     border: 1.5px solid #d9d9d9;
 }
+
+#form2{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    display: grid;
+    grid-template-columns: 0.08fr 0.3fr 0.7fr 1fr 0.9fr;
+    grid-template-rows: 40px 40px 40px 40px 40px 40px 40px 40px;
+    grid-template-areas: '. language any_language language_to_do .'
+    '. region_area any_region region_to_do .'
+    '. last_update any_time last_update_to_do .'
+    '. site_or_domain site_or_domain_input site_or_domain_to_do .'
+    '. terms_appearing anywhere_in_the_page terms_appearing_to_do .'
+    '. safe_search show_explicit_results safe_search_to_do . '
+    '. file_type any_format file_type_to_do .'
+    '. usage_rights not_filtered_by_licence usage_rights_to_do .';
+
+    #language{
+        grid-area: language;
+        justify-self: start;
+        align-self: center;
+        font-size: 12px;
+    }
+    #any_language{
+        grid-area: any_language;
+        justify-self: center;
+        align-self: center;
+        width: 400px;
+        height: 25px;
+        background-color: #f3f3f3;
+        border: 1px solid #d9d9d9;
+        outline: none;
+    }
+    #language_to_do{
+        grid-area: language_to_do;
+        font-size: 12px;
+    }
+
+    #region{
+        grid-area: region_area;
+        justify-self: start;
+        align-self: center;
+        font-size: 12px;
+    }
+    #any_region{
+        grid-area: any_region;
+        justify-self: center;
+        align-self: center;
+        width: 400px;
+        height: 25px;
+        background-color: #f3f3f3;
+        border: 1px solid #d9d9d9;
+        outline: none;
+    }
+    #region_to_do{
+        grid-area: region_to_do;
+        font-size: 12px;
+    }
+
+    #last_update{
+        grid-area: last_update;
+        justify-self: start;
+        align-self: center;
+        font-size: 12px;
+    }
+    #any_time{
+        grid-area: any_time;
+        justify-self: center;
+        align-self: center;
+        width: 400px;
+        height: 25px;
+        background-color: #f3f3f3;
+        border: 1px solid #d9d9d9;
+        outline: none;
+    }
+    #last_update_to_do{
+        grid-area: last_update_to_do;
+        font-size: 12px;
+    }
+
+    #site_or_domain{
+        grid-area: site_or_domain;
+        justify-self: start;
+        align-self: center;
+        font-size: 12px;
+    }
+    #site_or_domain_input{
+        grid-area: site_or_domain_input;
+        justify-self: center;
+        align-self: center;
+        width: 400px;
+        height: 25px;
+        outline: none;
+    }
+    #site_or_domain_to_do{
+        grid-area: site_or_domain_to_do;
+        font-size: 12px;
+    }
+
+    #terms_appearing{
+        grid-area: terms_appearing;
+        justify-self: start;
+        align-self: center;
+        font-size: 12px;
+    }
+    #anywhere_in_the_page{
+        grid-area: anywhere_in_the_page;
+        justify-self: center;
+        align-self: center;
+        width: 400px;
+        height: 25px;
+        background-color: #f3f3f3;
+        border: 1px solid #d9d9d9;
+        outline: none;
+    }
+    #terms_appearing_to_do{
+        grid-area: terms_appearing_to_do;
+        font-size: 12px;
+    }
+
+    #safe_search{
+        grid-area: safe_search;
+        justify-self: start;
+        align-self: center;
+        font-size: 12px;
+        color:  rgb(87, 87, 253);
+    }
+    #show_explicit_results{
+        grid-area: show_explicit_results;
+        justify-self: center;
+        align-self: center;
+        width: 400px;
+        height: 25px;
+        background-color: #f3f3f3;
+        border: 1px solid #d9d9d9;
+        outline: none;
+    }
+    #safe_search_to_do{
+        grid-area: safe_search_to_do;
+        font-size: 12px;
+
+        a{
+            text-decoration: none;
+            color: rgb(87, 87, 253);
+        }
+    }
+
+    #file_type{
+        grid-area: file_type;
+        justify-self: start;
+        align-self: center;
+        font-size: 12px;
+    }
+    #any_format{
+        grid-area: any_format;
+        justify-self: center;
+        align-self: center;
+        width: 400px;
+        height: 25px;
+        background-color: #f3f3f3;
+        border: 1px solid #d9d9d9;
+        outline: none;
+    }
+    #file_type_to_do{
+        grid-area: file_type_to_do;
+        font-size: 12px;
+    }
+
+    #usage_rights{
+        grid-area: usage_rights;
+        justify-self: start;
+        align-self: center;
+        font-size: 12px;
+        color:  rgb(87, 87, 253);
+    }
+    #not_filter_by_licence{
+        grid-area: not_filtered_by_licence;
+        justify-self: center;
+        align-self: center;
+        width: 400px;
+        height: 25px;
+        background-color: #f3f3f3;
+        border: 1px solid #d9d9d9;
+        outline: none;
+    }
+    #usage_rights_to_do{
+        grid-area: usage_rights_to_do;
+        font-size: 12px;
+    }
+}
+
+#submit_advanced_search{
+    display: grid;
+    grid-template-columns: 1.08fr 1fr 0.9fr;
+    grid-template-rows: 70px;
+    grid-template-areas: 'submit_advanced_search_sub . .';
+
+    #submit_advanced_search_sub{
+        grid-area: submit_advanced_search_sub;
+        justify-self: end;
+        align-self: end;
+        padding-right: 25px;
+        height: 50px;
+
+        button{
+            background-color: #4a8cf7;
+            border: 1px solid #4a8cf7;
+            height: 30px;
+            width: 130px;
+            color: #f3f3f3;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: 550;
+            outline: none;
+        }
+        button:hover{
+            background-color: #4787ed;
+            border: 1px solid #4a8cf7;
+            height: 30px;
+            width: 130px;
+            color: #f3f3f3;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: 550;
+            outline: none;
+        }
+    }
+}
+
+#border_bottom_2{
+    display: grid;
+    grid-template-columns: 0.08fr 2fr 0.9fr;
+    grid-template-rows: 10px;
+    grid-template-areas: '. border_line_1 .';
+
+    #border_line_1{
+        grid-area: border_line_1;
+        border-bottom: 1.5px solid #d9d9d9;
+    }
+}
+
+#heading3{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 40px;
+    grid-template-areas: 'heading_2 .';
+
+    p{
+        grid-area: heading_2;
+        padding-left: 45px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 15px;
+        font-weight: 500;
+    }
+}
+#heading_3_links{
+    padding-left: 45px;
+    height: 110px;
+    padding-top: 20px;
+    a{
+        text-decoration: none;
+        color: rgb(87, 87, 253);
+        font-weight: 540;
+        font-size: 15px;
+    }
+    a:hover{
+        color: rgb(87, 87, 253);
+        font-weight: 540;
+        font-size: 15px;
+        text-decoration: underline;
+    }
+}
+
+#footer{
+    width: 100%;
+    background-color: #f2f2f2;
+    font-family: Arial, Helvetica, sans-serif;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 50px 50px;
+    grid-template-areas: 'footer_1' 'footer_2';
+
+    #footer_1{
+        grid-area: footer_1;
+        border-bottom: 1.5px solid #d9d9d9;
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        grid-template-rows: 50px;
+        grid-template-areas: 'france .';
+
+        #france{
+            grid-area: france;
+            padding-left: 45px;
+            align-self: center;
+            color: #717171;
+
+        }
+    }
+    #footer_2{
+        grid-area: footer_2;
+        display: grid;
+        grid-template-columns: 45px 80px 100px 100px 180px 1fr;
+        grid-template-rows: 50px;
+        grid-template-areas: '. help_h privacy terms consumer_information .';
+
+        #help{
+            grid-area: help_h;
+            align-self: center;
+            color: #717171;
+        }
+        #consumer_information{
+            grid-area: consumer_information;
+            align-self: center;
+            color: #717171;
+            
+        }
+        #privacy{
+            grid-area: privacy;
+            align-self: center;
+            color: #717171;
+            
+        }
+        #terms{
+            grid-area: terms;
+            align-self: center;
+            color: #717171;
+            
+        }
+        a{
+            text-decoration: none;
+        }
+        a:hover{
+            color: black;
+        }
+    }
+}
+
