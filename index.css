@@ -3,6 +3,11 @@ html {
   width: 100%;
 }
 
+body {
+  padding: 0;
+  margin: 0;
+}
+
 #navbar {
   display: -ms-grid;
   display: grid;
@@ -421,31 +426,37 @@ html {
 }
 
 #footer {
-  position: fixed;
   bottom: 0;
   width: 100%;
-  background-color: #f2f2f2;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 100px 100px 100px 150px 1fr 150px 100px 100px 100px;
-      grid-template-columns: 100px 100px 100px 150px 1fr 150px 100px 100px 100px;
+  background-color: #8a8c8d;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
   -ms-grid-rows: 50px 50px;
       grid-template-rows: 50px 50px;
-      grid-template-areas: "france . . . . . . . ." "about advertising business search_works . consumer_information privacy terms settings";
+      grid-template-areas: 'footer_1' 'footer_2';
 }
 
-#footer a {
-  text-decoration: none;
-  color: #5f6368;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 15px;
+#footer #footer_1 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: footer_1;
+  border-bottom: 1.5px solid #d9d9d9;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 2fr;
+      grid-template-columns: 1fr 2fr;
+  -ms-grid-rows: 50px;
+      grid-template-rows: 50px;
+      grid-template-areas: 'france';
 }
 
-#footer #france {
+#footer #footer_1 #france {
   -ms-grid-row: 1;
   -ms-grid-column: 1;
   grid-area: france;
-  color: #5f6368;
+  color: #757373;
   font-family: Arial, Helvetica, sans-serif;
   -ms-grid-column-align: center;
       justify-self: center;
@@ -454,8 +465,28 @@ html {
       align-self: center;
 }
 
-#footer #about {
+#footer #footer_1 #footer_2 {
   -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: footer_2;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 100px 100px 100px 100px 1fr 100px 100px 100px 100px;
+      grid-template-columns: 100px 100px 100px 100px 1fr 100px 100px 100px 100px;
+  -ms-grid-rows: 50px;
+      grid-template-rows: 50px;
+      grid-template-areas: 'about advertising business search_works . consumer_information privacy terms settings';
+}
+
+#footer #footer_1 #footer_2 a {
+  text-decoration: none;
+  color: #5f6368;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+}
+
+#footer #footer_1 #footer_2 #about {
+  -ms-grid-row: 1;
   -ms-grid-column: 1;
   grid-area: about;
   -ms-grid-column-align: center;
@@ -465,8 +496,8 @@ html {
       align-self: center;
 }
 
-#footer #advertising {
-  -ms-grid-row: 2;
+#footer #footer_1 #footer_2 #advertising {
+  -ms-grid-row: 1;
   -ms-grid-column: 2;
   grid-area: advertising;
   -ms-grid-column-align: center;
@@ -476,8 +507,8 @@ html {
       align-self: center;
 }
 
-#footer #business {
-  -ms-grid-row: 2;
+#footer #footer_1 #footer_2 #business {
+  -ms-grid-row: 1;
   -ms-grid-column: 3;
   grid-area: business;
   -ms-grid-column-align: center;
@@ -487,8 +518,8 @@ html {
       align-self: center;
 }
 
-#footer #search_works {
-  -ms-grid-row: 2;
+#footer #footer_1 #footer_2 #search_works {
+  -ms-grid-row: 1;
   -ms-grid-column: 4;
   grid-area: search_works;
   -ms-grid-column-align: center;
@@ -498,8 +529,8 @@ html {
       align-self: center;
 }
 
-#footer #consumer_information {
-  -ms-grid-row: 2;
+#footer #footer_1 #footer_2 #consumer_information {
+  -ms-grid-row: 1;
   -ms-grid-column: 6;
   grid-area: consumer_information;
   -ms-grid-column-align: center;
@@ -509,8 +540,8 @@ html {
       align-self: center;
 }
 
-#footer #privacy {
-  -ms-grid-row: 2;
+#footer #footer_1 #footer_2 #privacy {
+  -ms-grid-row: 1;
   -ms-grid-column: 7;
   grid-area: privacy;
   -ms-grid-column-align: center;
@@ -520,8 +551,8 @@ html {
       align-self: center;
 }
 
-#footer #terms {
-  -ms-grid-row: 2;
+#footer #footer_1 #footer_2 #terms {
+  -ms-grid-row: 1;
   -ms-grid-column: 8;
   grid-area: terms;
   -ms-grid-column-align: center;
@@ -531,8 +562,8 @@ html {
       align-self: center;
 }
 
-#footer #settings {
-  -ms-grid-row: 2;
+#footer #footer_1 #footer_2 #settings {
+  -ms-grid-row: 1;
   -ms-grid-column: 9;
   grid-area: settings;
   -ms-grid-column-align: center;

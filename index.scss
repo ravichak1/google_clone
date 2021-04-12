@@ -2,6 +2,11 @@ html{
     height: 100%;
     width: 100%;
   }
+
+body{
+  padding: 0;
+  margin: 0;
+}
   
   #navbar{
     display: grid;
@@ -309,71 +314,88 @@ html{
     border-radius: 20px;
     transform: scale(1.1);
   }
+
   #footer{
-    position: fixed;
     bottom: 0;
     width: 100%;
-    background-color: #f2f2f2;
     display: grid;
-    grid-template-columns: 100px 100px 100px 150px 1fr 150px 100px 100px 100px;
+    background-color: #8a8c8d;
+    grid-template-columns: 1fr;
     grid-template-rows: 50px 50px;
-    
-    grid-template-areas: "france . . . . . . . ." "about advertising business search_works . consumer_information privacy terms settings";
-  
-    a{
+    grid-template-areas: 'footer_1' 'footer_2';
+
+
+    #footer_1{
+      grid-area: footer_1;
+      border-bottom: 1.5px solid #d9d9d9;
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+      grid-template-rows: 50px;
+      grid-template-areas: 'france';
+
+      #france{
+        grid-area: france;
+        color: #757373;
+        font-family: Arial, Helvetica, sans-serif;
+        justify-self: center;
+        align-self: center;
+
+    }
+
+    #footer_2{
+      grid-area: footer_2;
+      display: grid;
+      grid-template-columns: 100px 100px 100px 100px 1fr 100px 100px 100px 100px;
+      grid-template-rows: 50px;
+      grid-template-areas: 'about advertising business search_works . consumer_information privacy terms settings';
+
+      a{
         text-decoration: none;
         color: #5f6368;
         font-family: Arial, Helvetica, sans-serif;
         font-size: 15px;
-    }
-    #france{
-        grid-area: france;
-        color: #5f6368;
-        font-family: Arial, Helvetica, sans-serif;
-        justify-self: center;
-        align-self: center;
-    }
-    #about{
+      }
+
+      #about{
         grid-area: about;
         justify-self: center;
         align-self: center;
-    }
-    #advertising{
+      }
+      #advertising{
         grid-area: advertising;
         justify-self: center;
         align-self: center;
-    }
-    #business{
+      }
+      #business{
         grid-area: business;
         justify-self: center;
         align-self: center;
-    }
-    #search_works{
+      }
+      #search_works{
         grid-area: search_works;
         justify-self: center;
         align-self: center;
-    }
-    #consumer_information{
+      }
+      #consumer_information{
         grid-area: consumer_information;
         justify-self: center;
         align-self: center;
-    }
-    #privacy{
+      }
+      #privacy{
         grid-area: privacy;
         justify-self: center;
         align-self: center;
-    }
-    #terms{
+      }
+      #terms{
         grid-area: terms;
         justify-self: center;
         align-self: center;
-    }
-    #settings{
+      }
+      #settings{
         grid-area: settings;
-    justify-self: center;
-    align-self: center;        
+        justify-self: center;
+        align-self: center;        
+      }
     }
   }
-  
-  
-  
+}
