@@ -242,8 +242,8 @@ body {
   display: grid;
   -ms-grid-columns: 1fr 1fr 1fr;
       grid-template-columns: 1fr 1fr 1fr;
-  -ms-grid-rows: 300px 140px 70px 200px;
-      grid-template-rows: 300px 140px 70px 200px;
+  -ms-grid-rows: 210px 140px 70px 150px;
+      grid-template-rows: 210px 140px 70px 150px;
       grid-template-areas: ". logo ." ". search ."  ". offered .";
 }
 
@@ -430,7 +430,7 @@ body {
   width: 100%;
   display: -ms-grid;
   display: grid;
-  background-color: #8a8c8d;
+  background-color: #f2f2f2;
   -ms-grid-columns: 1fr;
       grid-template-columns: 1fr;
   -ms-grid-rows: 50px 50px;
@@ -458,118 +458,128 @@ body {
   grid-area: france;
   color: #757373;
   font-family: Arial, Helvetica, sans-serif;
-  -ms-grid-column-align: center;
-      justify-self: center;
+  padding-left: 45px;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
 }
 
-#footer #footer_1 #footer_2 {
+#footer #footer_2 {
   -ms-grid-row: 2;
   -ms-grid-column: 1;
   grid-area: footer_2;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 100px 100px 100px 100px 1fr 100px 100px 100px 100px;
-      grid-template-columns: 100px 100px 100px 100px 1fr 100px 100px 100px 100px;
+  -ms-grid-columns: 45px 90px 120px 100px 150px 1fr 200px 100px 100px 100px;
+      grid-template-columns: 45px 90px 120px 100px 150px 1fr 200px 100px 100px 100px;
   -ms-grid-rows: 50px;
       grid-template-rows: 50px;
-      grid-template-areas: 'about advertising business search_works . consumer_information privacy terms settings';
+      grid-template-areas: '. about advertising business search_works . consumer_information privacy terms settings';
 }
 
-#footer #footer_1 #footer_2 a {
+#footer #footer_2 a {
   text-decoration: none;
-  color: #5f6368;
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 15px;
+  color: #717171;
 }
 
-#footer #footer_1 #footer_2 #about {
-  -ms-grid-row: 1;
-  -ms-grid-column: 1;
-  grid-area: about;
-  -ms-grid-column-align: center;
-      justify-self: center;
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
+#footer #footer_2 a:hover {
+  color: black;
 }
 
-#footer #footer_1 #footer_2 #advertising {
+#footer #footer_2 #about {
   -ms-grid-row: 1;
   -ms-grid-column: 2;
-  grid-area: advertising;
-  -ms-grid-column-align: center;
-      justify-self: center;
+  grid-area: about;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
-#footer #footer_1 #footer_2 #business {
+#footer #footer_2 #advertising {
   -ms-grid-row: 1;
   -ms-grid-column: 3;
-  grid-area: business;
-  -ms-grid-column-align: center;
-      justify-self: center;
+  grid-area: advertising;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
-#footer #footer_1 #footer_2 #search_works {
+#footer #footer_2 #business {
   -ms-grid-row: 1;
   -ms-grid-column: 4;
-  grid-area: search_works;
-  -ms-grid-column-align: center;
-      justify-self: center;
+  grid-area: business;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
-#footer #footer_1 #footer_2 #consumer_information {
+#footer #footer_2 #search_works {
   -ms-grid-row: 1;
-  -ms-grid-column: 6;
-  grid-area: consumer_information;
-  -ms-grid-column-align: center;
-      justify-self: center;
+  -ms-grid-column: 5;
+  grid-area: search_works;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
-#footer #footer_1 #footer_2 #privacy {
+#footer #footer_2 #consumer_information {
   -ms-grid-row: 1;
   -ms-grid-column: 7;
-  grid-area: privacy;
-  -ms-grid-column-align: center;
-      justify-self: center;
+  grid-area: consumer_information;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
-#footer #footer_1 #footer_2 #terms {
+#footer #footer_2 #privacy {
   -ms-grid-row: 1;
   -ms-grid-column: 8;
-  grid-area: terms;
-  -ms-grid-column-align: center;
-      justify-self: center;
+  grid-area: privacy;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
-#footer #footer_1 #footer_2 #settings {
+#footer #footer_2 #terms {
   -ms-grid-row: 1;
   -ms-grid-column: 9;
-  grid-area: settings;
-  -ms-grid-column-align: center;
-      justify-self: center;
+  grid-area: terms;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#footer #footer_2 #settings {
+  -ms-grid-row: 1;
+  -ms-grid-column: 10;
+  grid-area: settings;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 /*# sourceMappingURL=index.css.map */

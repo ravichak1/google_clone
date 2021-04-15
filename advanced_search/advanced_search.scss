@@ -558,28 +558,22 @@ input[type=text]{
         #help{
             grid-area: help_h;
             align-self: center;
-            color: #717171;
         }
         #consumer_information{
             grid-area: consumer_information;
             align-self: center;
-            color: #717171;
-            
         }
         #privacy{
             grid-area: privacy;
             align-self: center;
-            color: #717171;
-            
         }
         #terms{
             grid-area: terms;
-            align-self: center;
-            color: #717171;
-            
+            align-self: center;    
         }
         a{
             text-decoration: none;
+            color: #717171;
         }
         a:hover{
             color: black;

@@ -840,7 +840,6 @@ input[type=text] {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
-  color: #717171;
 }
 
 #footer #footer_2 #consumer_information {
@@ -850,7 +849,6 @@ input[type=text] {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
-  color: #717171;
 }
 
 #footer #footer_2 #privacy {
@@ -860,7 +858,6 @@ input[type=text] {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
-  color: #717171;
 }
 
 #footer #footer_2 #terms {
@@ -870,11 +867,11 @@ input[type=text] {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
-  color: #717171;
 }
 
 #footer #footer_2 a {
   text-decoration: none;
+  color: #717171;
 }
 
 #footer #footer_2 a:hover {
